@@ -1,0 +1,73 @@
+.about{
+	width: 100%;
+	
+	
+}
+
+.about p{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.about .card{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about .card .col{
+	width: 23% ;
+	opacity: 0.7;
+	transition: 0.4s;
+	margin-bottom: 60px;
+	
+}
+.about .card .col .img-box{
+      width: 100%;
+	 
+
+	 
+	
+}
+.about .card .col .img-box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.about .card .col h1{
+	margin: 0;
+}
+
+.about .card .col button{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.179);
+	transition: 0.4s;
+}
+.about .card .col button:hover{
+	background-color: black;
+	color: white;
+}
+
+.about .card .col:hover{
+	transform: scale(1.03);
+	opacity: 1;
+}
+
+
+
+@media (max-width:1172px) {
+	.about .card .col{
+		width: 49%;
+	}
+}
+
+@media (max-width:552px) {
+
+	.about .card .col{
+		width: 100%;
+	}
+}

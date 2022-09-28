@@ -1,0 +1,54 @@
+
+/* navigation bar  */
+
+nav ul{
+	position: fixed;
+
+	list-style: none;
+	padding: 3px;
+	margin: 0;
+	width: 100%;
+	background-color:white;
+	top: 0;
+	box-shadow: 0px 3px 10px rgb(148, 148, 148);
+	overflow: hidden;
+	z-index: 10;
+
+}
+
+nav ul li{
+float: left;
+}
+
+nav ul .right{
+float: right;
+}
+
+nav ul li a,nav ul .menu-icon{
+display: block;
+text-decoration: none;
+padding: 15px;
+font-size: 20px;
+color: rgb(0, 0, 0);
+letter-spacing: 3px;
+font-weight: 400;
+transition: .3s;
+}
+
+nav ul .menu-icon{
+display: none;
+
+}
+nav ul li a:hover, nav ul .menu-icon:hover{
+background-color: rgb(209, 208, 208);
+}
+
+
+@media (max-width: 550px) {
+nav ul .right{
+	display: none;
+}
+nav ul .menu-icon{
+	display: inline;
+}
+}

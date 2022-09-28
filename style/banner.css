@@ -1,0 +1,47 @@
+html{
+	scroll-behavior: smooth;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .4s;
+}
+.banner .banner-title{
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.banner .banner-title a{
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 30px
+}
+.banner .banner-title .btn{
+	display: block;
+	width: 100;
+	padding: 10px 20px;
+	background-color: rgba(32, 32, 32, 0.789);
+	margin-right: 10px;
+}
+
+.banner .banner-title .btn:hover{
+	background-color: rgba(32, 32, 32, 0.407);
+}
+
+.banner:hover > img{
+	filter: blur(4px);
+}
